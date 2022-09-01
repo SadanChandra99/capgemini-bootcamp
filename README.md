@@ -1,2 +1,2 @@
 # capgemini-bootcamp
-bootcap-sprint-1-project
+bootcamp-sprint-1-project
