@@ -1,0 +1,5 @@
+package com.capgemini.Model;
+
+public class AccountModel {
+
+}

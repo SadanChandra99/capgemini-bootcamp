@@ -1,0 +1,25 @@
+package com.capgemini.Repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.capgemini.Entity.AccountEntity;
+import com.capgemini.Model.AccountModel;
+
+
+public interface AccountRepository extends JpaRepository<AccountEntity, Long>{
+	
+	public AccountModel addAccount(AccountModel accountmodel);
+	
+	public AccountModel getAccountById(long id);
+	
+	public List<AccountModel> getAllAccounts();
+	
+	public AccountModel updateAccount(long id, AccountModel accountmodel);
+	
+	public AccountModel removeAccount(long id);
+
+	
+}

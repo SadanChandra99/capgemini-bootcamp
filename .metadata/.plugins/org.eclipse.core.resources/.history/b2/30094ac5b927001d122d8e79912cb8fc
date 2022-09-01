@@ -1,0 +1,19 @@
+package com.capgemini.services;
+
+import java.util.List;
+
+import com.capgemini.entity.CreditCard;
+
+public interface CreditCardService {
+	
+	public CreditCard addCreditCard(CreditCard creditCard);
+	
+	public CreditCard removeCreditCard(long cardId);
+	
+	public CreditCard updateCreditCard(long cardId, CreditCard creditCard);
+	
+	public CreditCard getCreditCard(long cardId);
+	
+	public List<CreditCard> getAllCreditCards();
+
+}

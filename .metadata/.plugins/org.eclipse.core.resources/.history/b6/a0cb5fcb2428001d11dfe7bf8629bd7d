@@ -1,0 +1,29 @@
+package com.capgemini.controllers;
+
+import java.awt.PageAttributes.MediaType;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.capgemini.entity.Account;
+import com.capgemini.model.AccountModel;
+import com.capgemini.repository.AccountRepository;
+import com.capgemini.services.AccountService;
+
+public class AccountController {
+	
+	@Autowired
+	private AccountService accountService;
+
+	@GetMapping(value ="/getall" )
+	public ResponseEntity<List<AccountModel>> getallaccounts(){
+		try {
+			return ResponseEntity.ok(accountService.getAllAccounts());
+		} catch(Exception e) {
+			
+		}
+		return null;
+	}
+}

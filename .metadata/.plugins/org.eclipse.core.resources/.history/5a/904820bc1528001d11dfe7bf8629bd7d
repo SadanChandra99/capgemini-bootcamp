@@ -1,0 +1,5 @@
+package com.capgemini.mapper;
+
+public class PaymentMapper {
+
+}

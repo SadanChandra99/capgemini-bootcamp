@@ -1,0 +1,19 @@
+package com.capgemini.services;
+
+import java.util.List;
+
+import com.capgemini.entity.Account;
+
+public interface AccountService {
+	
+	public Account addAccount(Account account);
+	
+	public Account removeAccount(long custId);
+	
+	public Account updateAccount(long custId, Account account);
+	
+	public Account getAccount(long custId);
+	
+	public List<Account> getAllAccounts();
+
+}

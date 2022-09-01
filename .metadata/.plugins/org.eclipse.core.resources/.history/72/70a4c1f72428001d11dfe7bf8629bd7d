@@ -1,0 +1,35 @@
+package com.capgemini.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Admin {
+	
+	
+	@Id
+	@Column
+	private String userId;
+
+	public Admin(String userId) {
+		super();
+		this.userId = userId;
+	}
+
+	public Admin() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	
+	
+
+}

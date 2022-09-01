@@ -1,0 +1,68 @@
+package com.capgemini.entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Statement {
+
+	@Id
+	@Column
+	private long statementId;
+	@Column
+	private double dueAmount;
+	@Column
+	private LocalDate billingDate;
+	@Column
+	private LocalDate dueDate;
+	@Column
+	private Customer customer;
+	
+	public Statement(long statementId, double dueAmount, LocalDate billingDate, LocalDate dueDate, Customer customer) {
+		super();
+		this.statementId = statementId;
+		this.dueAmount = dueAmount;
+		this.billingDate = billingDate;
+		this.dueDate = dueDate;
+		this.customer = customer;
+	}
+	public Statement() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public long getStatementId() {
+		return statementId;
+	}
+	public void setStatementId(long statementId) {
+		this.statementId = statementId;
+	}
+	public double getDueAmount() {
+		return dueAmount;
+	}
+	public void setDueAmount(double dueAmount) {
+		this.dueAmount = dueAmount;
+	}
+	public LocalDate getBillingDate() {
+		return billingDate;
+	}
+	public void setBillingDate(LocalDate billingDate) {
+		this.billingDate = billingDate;
+	}
+	public LocalDate getDueDate() {
+		return dueDate;
+	}
+	public void setDueDate(LocalDate dueDate) {
+		this.dueDate = dueDate;
+	}
+	public Customer getCustomer() {
+		return customer;
+	}
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
+	
+}
