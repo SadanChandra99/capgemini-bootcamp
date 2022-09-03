@@ -1,0 +1,5 @@
+package com.capgemini.Service;
+
+public interface CustomerService {
+
+}

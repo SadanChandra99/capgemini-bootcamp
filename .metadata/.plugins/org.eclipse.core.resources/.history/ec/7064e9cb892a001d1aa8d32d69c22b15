@@ -1,0 +1,5 @@
+package com.capgemini.Entity;
+
+public class CustomerEntity {
+
+}

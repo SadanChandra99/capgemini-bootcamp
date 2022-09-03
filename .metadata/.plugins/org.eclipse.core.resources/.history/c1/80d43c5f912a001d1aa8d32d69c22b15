@@ -1,0 +1,36 @@
+package com.capgemini.Entity;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.capgemini.Model.AddressModel;
+
+@Entity
+@Table
+public class CustomerEntity {
+	
+	@Id
+	@Column
+	private String userId;
+	@Column
+	private String name;
+	@Column
+	private String email;
+	@Column
+	private String contactNo;
+	@Column
+	private LocalDate dob;
+	@Column
+	@Autowired
+	private AddressEntity address;
+	
+	
+	
+
+}

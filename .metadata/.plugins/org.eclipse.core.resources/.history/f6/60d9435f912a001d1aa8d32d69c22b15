@@ -1,0 +1,22 @@
+package com.capgemini.Model;
+
+import java.time.LocalDate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class CustomerModel {
+
+	
+	private String userId;
+	private String name;
+	private String email;
+	private String contactNo;
+	private LocalDate dob;
+	@Autowired
+	private AddressModel addressmodel;
+	
+	
+	
+	
+	
+}
